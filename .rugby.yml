@@ -1,0 +1,10 @@
+- name: Express
+  service:
+    group: lang
+    type: node
+  install: 
+    - apt-get -y install build-essential
+    - npm install -g mocha 
+    - npm install
+  script:
+    - mocha
